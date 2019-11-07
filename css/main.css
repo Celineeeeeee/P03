@@ -31,6 +31,7 @@ li {
 
 a{
   text-decoration: none;
+  color:rgb(5, 84,150);
 }
 
 a:hover{
@@ -54,7 +55,7 @@ a:hover{
   INTERACTIVE ELEMENTS -------------------
 */
 .nav-button li{
-  background-color:rgba(62, 176, 119);
+  background-color:rgb(123, 167, 171);
 }
 
 .nav-button li:hover{
@@ -69,17 +70,69 @@ a:hover{
   font-size: 1rem;
 }
 
-.button input{
-  border:none;
-  background-color: rgb(5, 84, 150);
-  color:white;
+form {
+  position: relative;
+  margin: 0 auto;
+  background-color: rgb(245,245,230);
+}
+
+input, button {
+  border: none;
+  outline: none;
+}
+
+.bar input {
+  border: 2px solid #7BA7AB;
+  background: #F9F0DA;
+  color: #9E9C9C;
+  width: 28vw;
   height: 4vw;
-  width: 10vw;
+  padding-left: 1vw;
+}
+.bar button {
+  top: 0;
+  right: 0;
+  background: #7BA7AB;
+  height: 4vw;
+  width: 4vw;
+  cursor: pointer;
+  position: absolute;
+  left: 25vw;
+}
+.bar button:before {
+    content: "\f002";
+    font-family: FontAwesome;
+    font-size: 16px;
+    color: #F9F0DA;
+}
+
+#bar_button button:before{
+  content:"SEND";
+}
+
+#bar_button button{
+  width: 8vw;
+}
+#bar_button{
+  padding-top: 2vw;
 }
 
 
+#button button{
+  width: 8vw;
+  height: 4vw;
+  background-color: rgb(241,139,137);
+}
 
+#button button:before{
+  content:"SEND";
+  color: white;
+}
 
+#button button:hover{
+  color:black;
+  background-color: rgb(5, 84,150);
+}
 
 /*
   TEXT ELEMENTS -------------------
@@ -156,7 +209,7 @@ p, a{
 }
 
 #color-square4{
-  background-color:rgb(62, 176, 119);
+  background-color:rgb(123, 167, 171);
 }
 
 #color-square5{
