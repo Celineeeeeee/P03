@@ -1,0 +1,47 @@
+nav{
+  margin-top: 5vw;
+  position: relative;
+  top: 10vw;
+  left: 25%;
+  right:25%;
+}
+
+.about-items h1{
+  font-size: 10vw;
+  line-height: 10rem;
+  position: relative;
+  top: 8vw;
+  left: 15%;
+  right: 15%;
+  color:RGB(5, 84, 150);
+  letter-spacing: 1vw;
+}
+
+span{
+  color:RGB(241, 139, 137);
+}
+
+.about-items h2{
+  position: relative;
+  top: 8vw;
+  left: 15%;
+  right: 15%;
+  font-size: 2vw;
+  color:RGB(5, 84, 150);
+}
+
+.social-element{
+  margin-top: 14vw;
+  margin-left: 28vw;
+}
+
+
+.infor{
+  text-align: center;
+  margin-top: 4vw;
+  margin-left: 10vw;
+}
+
+.infor h4{
+  color:RGB(5, 84, 150);
+}
