@@ -1,3 +1,14 @@
+/* style for home  */
+
+.logo{
+  border:2px solid white;
+}
+
+.logo h1{
+  font-size: 1.15rem;
+}
+
+
 nav{
   margin-top: 5vw;
   position: relative;
@@ -42,4 +53,14 @@ span{
 
 .infor h4{
   color:RGB(5, 84, 150);
+}
+
+
+
+
+/* the style for work section */
+
+.project1{
+  background-color: white;
+
 }
