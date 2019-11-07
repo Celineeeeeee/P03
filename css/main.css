@@ -57,6 +57,10 @@ a:hover{
   color:rgb(0, 0, 0);
 }
 
+.img-items img{
+  width: 15vw;
+  height: 20vw;
+}
 
 /*
   INTERACTIVE ELEMENTS -------------------
@@ -113,6 +117,9 @@ input, button {
     color: #F9F0DA;
 }
 
+#button button:before{
+  content:"DEFAULT";
+}
 #bar_button button:before{
   content:"SEND";
 }
@@ -208,6 +215,8 @@ p, a, label{
   COMBINED ELEMENTS -------------------
 */
 
+
+/* color style */
 .color{
   display: flex;
 }
@@ -216,7 +225,6 @@ p, a, label{
   padding: 1vw;
   color: white;
 }
-
 .color p{
   text-transform: uppercase;
 }
@@ -258,6 +266,22 @@ p, a, label{
 #color-square6 p{
   color:black;
 }
+
+/* font style */
+
+.font1 h3{
+  font-family: 'Monoton', cursive;
+}
+
+.font3 h3{
+  font-family: 'Bad Script', cursive;
+}
+
+.font4 h3{
+  font-family: 'Rajdhani', sans-serif;
+}
+
+/* social style */
 .social-element{
   margin-top: 2vw;
 }
