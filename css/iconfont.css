@@ -14,11 +14,11 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   padding-right: 5vw;
-  color: rgb(5, 84, 150);
+  color:rgb(241, 139, 137);
 }
 
 .iconfont:hover{
-  color:rgb(241, 139, 137);
+  color: rgb(5, 84, 150);
 }
 
 .icon-facebookfacebook51:before {
