@@ -10,4 +10,3 @@ Starting October 31
 4. Generate an initial set of HTML/CSS templates showing how the visual and textual components of your ethos would be used in your site.
 
 Bio Draft:
-My name is Celine Wang. I am an undergrad student who is learning in the school of Interactive Arts & Technology at Simon Fraser University. I major in graphic design and interface design. I have strong organizational ability and social ability, can work well independently and together with other people, develop team spirit. I study hard, and have achieved good results in the every courses. Thus, it makes me have a solid professional knowledge in my works. In additionally, I have conscious to improve my practical ability and the cultivation of my ability to use software like Adobe Photoshop, Adobe Illustrator, Adobe Indesign, through various activities. I am especially good at the in graphic design area, like book design, logo design, and web design.
