@@ -13,8 +13,8 @@ nav{
   margin-top: 5vw;
   position: relative;
   top: 10vw;
-  left: 25%;
-  right:25%;
+  left: 10%;
+  right: 10%;
 }
 
 .about-items h1{
@@ -41,14 +41,13 @@ span{
 
 .social-element{
   margin-top: 14vw;
-  margin-left: 28vw;
+  margin-left: 25vw;
 }
 
 
 .infor{
   text-align: center;
   margin-top: 4vw;
-  margin-left: 10vw;
 }
 
 .infor h4{
@@ -63,4 +62,8 @@ span{
 .project1{
   background-color: white;
 
+}
+
+.works1{
+  
 }
