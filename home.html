@@ -9,33 +9,107 @@
     <link href="https://fonts.googleapis.com/css?family=Bad+Script|Comfortaa|Monoton|Rajdhani&display=swap" rel="stylesheet">
   </head>
   <body>
-    <div class="home">
-      <div class="about-items">
-        <!-- <div class="logo">
-          <a href="home.html"> img</a>
-        </div> -->
-        <h1>HELLO, <br>I AM <span>CELINE.</span></h1>
+
+    <section id="home">
+      <div class="home_container">
+        <div class="home_header">
+          <h1>HELLO, <br>I AM <span>CELINE.</span></h1>
+        </div>
+
+        <div class="home_body">
+          <span class="iconfont">&#xe600;</span>
+          <span class="iconfont">&#xe601;</span>
+          <a href="https://www.pinterest.ca/"><span class="iconfont" >&#xe607;</span></a>
+          <span class="iconfont">&#xe51f;</span>
+        </div>
+        <div class="infor">
+          <h3>UI DESGIN | GRAPHIC DESGIN</h3>
       </div>
-      <nav id="home_nav" class="nav-button">
-        <ul>
-          <li><a href="about.html">ABOUT</a></li>
-          <li><a href="works.html">WORKS</a></li>
-          <li><a href="contact.html">CONTACT</a></li>
-          <li><a href="index.html">TEMPLATE</a></li>
-        </ul>
-      </nav>
-      <div class="social-element">
-        <span class="iconfont">&#xe600;</span>
-        <span class="iconfont">&#xe601;</span>
-        <a href="https://www.pinterest.ca/"><span class="iconfont" >&#xe607;</span></a>
-        <span class="iconfont">&#xe51f;</span>
+    </section>
+
+    <section id="works">
+      <div class="header">
+        <h2>MY PROJECTS</h2>
       </div>
+      <div class="work" >
+        <div class="works_header">
+          <a href="http://www.sfu.ca/~yanhongw/FInal%20project/home.html"><h3> This is my project 1.</h3></a>
+          <p>This is the final project of IAT235 course. This project created a website that could show a communicating complexity with a clear manner. The main issue was trying to clear up for stakeholders involves some kind of human-technical-environmental 'thing', like system, process, phenomenon, institution, etc.. In this project, we focused on how the Three Gorges Dam influenced building Local residences’ life and living condition.</p>
+        </div>
+        <div class="works_body">
+          <video muted autoplay loop controls>
+            <source src="img/project1.mp4" type="video/mp4">
+          </video>
+        </div>
+      </div>
+
+      <div class="work">
+        <div class="works_header">
+          <h3>project 02</h3>
+          <a href="http://www.sfu.ca/~yanhongw/FInal%20project/home.html"><h3> This is my project 1.</h3></a>
+          <p>This is the final project of IAT235 course. This project created a website that could show a communicating complexity with a clear manner. The main issue was trying to clear up for stakeholders involves some kind of human-technical-environmental 'thing', like system, process, phenomenon, institution, etc.. In this project, we focused on how the Three Gorges Dam influenced building Local residences’ life and living condition.</p>
+        </div>
+        <div class="works_body">
+          <video muted autoplay loop controls>
+            <source src="img/project1.mp4" type="video/mp4">
+          </video>
+        </div>
+      </div>
+    </section>
+
+    <section id="about">
+      <div class="bio">
+        <p>
+          My name is Celine Wang. I am an undergrad student who is learning in the school of Interactive Arts & Technology at Simon Fraser University. I major in graphic design and interface design. I have strong organizational ability and social ability, can work well independently and together with other people, develop team spirit. I study hard, and have achieved good results in the every courses. Thus, it makes me have a solid professional knowledge in my works. In additionally, I have conscious to improve my practical ability and the cultivation of my ability to use software like Adobe Photoshop, Adobe Illustrator, Adobe Indesign, through various activities. I am especially good at the in graphic design area, like book design, logo design, and web design.
+        </p>
+      </div>
+
       <div class="infor">
         <h4>NAME：Celine</h4>
         <h4>EMAIL：1234567890@gmail.com</h4>
         <h4>PHONE：123-4567-890</h4>
         <h4>ADDRESS：8888 University Dr, Burnaby, BC V5A 1S6</h4>
       </div>
-    </div>
+    </section>
+
+
+    <section id="contact">
+      <div class="contact_container">
+        <div class="contact_header">
+          <h1>CONTACT US</h1>
+        </div>
+        <div class="contact_body">
+          <div class="a">
+            <h2>hsjsjsjsjsj</h2>
+          </div>
+          <div class="b">
+            <h4>sjsjsjsjsk</h4>
+          </div>
+        </div>
+        <div class="infor">
+          <h3>UI DESGIN | GRAPHIC DESGIN</h3>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- navigation -->
+    <section id="navigation">
+      <input type="checkbox" class="openSidebarMenu" id="openSidebarMenu">
+      <label for="openSidebarMenu" class="sidebarIconToggle">
+        <div id="sidebar" class="sidebar_01">
+          <span class="iconfont" id="menu">&#xec3a;</span>
+        </div>
+      </label>
+      <div id="sidebarMenu">
+        <ul class="sidebarMenuInner" >
+          <li><a href="#home">HOME</a></li>
+          <li><a href="#about">ABOUT</a></li>
+          <li><a href="#works">WORKS</a></li>
+          <li><a href="#contact">CONTACT</a></li>
+          <li><a href="index.html">STYLE GUIDE</a></li>
+        </ul>
+      </div>
+    </section>
   </body>
 </html>

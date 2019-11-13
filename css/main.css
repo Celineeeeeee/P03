@@ -8,8 +8,7 @@
 }
 
 body{
-  background-color: rgb(245, 246, 230);
-  margin: 0 10vw 10vw 10vw;
+  margin: 0;
 }
 
 
@@ -74,18 +73,18 @@ a:hover{
 /*
   INTERACTIVE ELEMENTS -------------------
 */
-.nav-button li{
+.nav_main li{
   background-color:rgb(123, 167, 171);
 }
 
-.nav-button li:hover{
+.nav_main li:hover{
   background-color: rgb(241, 139, 137);
 }
 
-.nav-button a{
+.nav_main a{
   color: white;
 }
-.nav-button a:hover{
+.nav_main a:hover{
   color:rgb(0, 0, 0);
   font-size: 1rem;
 }
@@ -291,7 +290,7 @@ p, a, label{
 }
 
 /* social style */
-.social-element{
+.container{
   margin-top: 2vw;
 }
 
