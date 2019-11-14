@@ -12,7 +12,6 @@ body{
 }
 
 
-
 /* style for home  */
 #home{
   background-color: rgb(5, 84, 150,0.8);
@@ -380,7 +379,7 @@ footer{
 
 
 
-/* for responsive */
+/* responsive for mobile drive*/
 
 @media (max-width: 1024px){
   .home_body {
@@ -490,5 +489,294 @@ footer{
 
   .work {
     display: block;
+  }
+
+  #works {
+    height: 240vw;
+  }
+
+  .works_header h4 {
+    font-size: 1rem;
+    padding-top: 5vw;
+  }
+
+  .works_header p {
+    padding: 0 4vw 5vw;
+    font-size: 0.5rem;
+  }
+
+  .works_body {
+    background-color:rgb(255, 255, 255);
+    text-align: center;
+  }
+
+  #project1_header {
+    top: 50vw;
+    position: relative;
+  }
+
+  #project1_body {
+    position: relative;
+    bottom: 55vw;
+  }
+
+  #project2_header{
+    margin-top: 10vw;
+  }
+
+  .works_body img {
+    width: 50%;
+    height: 60%;
+    left: 0;
+  }
+
+  #project2_body {
+    position: relative;
+    bottom: 5vw;
+  }
+
+  #about {
+    height: 100vw;
+  }
+
+  .about_detail h4 {
+    font-size: 0.5rem;
+    line-height: 5vw;
+  }
+
+  .about_img img {
+    top: 14vw;
+  }
+
+  #contact {
+    height: 160vw;
+  }
+
+  .contact_infor {
+    height: 80vw;
+}
+
+  .contact_header h4 {
+    font-size: .5rem;
+  }
+
+  .contact_body {
+    display: block;
+  }
+
+  .contact_infor img {
+    left: 35%;
+    width: 20%;
+    bottom: 4vw;
+  }
+
+  .contact_icon {
+    left: 5%;
+  }
+
+  .contact_form {
+    position: relative;
+    bottom: 6vw;
+    height: 60vw;
+  }
+
+  #input_subject {
+    width: 59vw;
+  }
+
+  #message {
+    width: 59vw;
+    height: 20vw;
+  }
+
+  #bar_button button {
+    margin-top: 2vw;
+    width: 20vw;
+    height: 8vw;
+  }
+
+  footer {
+    height: 80vw;
+  }
+
+  .footer_wrap {
+    display: block;
+    margin: 6vw;
+  }
+
+  .footer_header{
+    margin-top: 4vw;
+  }
+
+  .footer_info {
+    position: relative;
+    top: 4vw;
+  }
+
+  .footer_link {
+    text-align: left;
+    position: relative;
+    top: 4vw;
+  }
+
+  .footer_body li {
+    display: inline-block;
+    position: static;
+    text-align: left;
+  }
+
+  .footer_input {
+    top: 4vw;
+    text-align: left;
+    margin-top: 0;
+    position: relative;
+  }
+
+  .footer_body input {
+    height: 6vw;
+  }
+
+  #button button {
+    margin-top: 2vw;
+    width: 16vw;
+    height: 6vw;
+  }
+}
+
+@media (max-width: 375px){
+
+  #works {
+    height: 260vw;
+  }
+
+  .infor h3 {
+    font-size: 0.5rem;
+  }
+
+  #project1_body {
+    bottom: 60vw;
+  }
+
+  #about {
+    height: 110vw;
+  }
+
+  .contact_header h4 {
+    padding-top: 6vw;
+  }
+
+  #contact {
+    height: 170vw;
+  }
+
+  .contact_form {
+    height: 70vw;
+  }
+
+  footer {
+    height: 120vw;
+  }
+
+  .footer_body li {
+    display: block;
+  }
+}
+
+
+/* PC responsive*/
+
+@media screen and (max-width: 978px) {
+
+  #home {
+    height: 45vw;
+  }
+
+  .home_body {
+    bottom: 4vw;
+    left: 35%;
+  }
+
+  #works {
+    height: 85vw;
+  }
+
+  .works_body video {
+    height: 100%;
+    margin: 0 1vw;
+    padding-top: 0;
+  }
+
+  #about {
+    height: 70vw;
+  }
+}
+
+@media screen and (max-width: 520px) {
+  .infor h3 {
+    font-size: 1rem;
+  }
+
+  .home_body {
+    bottom: 7vw;
+  }
+
+  #works {
+    height: 140vw;
+  }
+
+  #about {
+    height: 80vw;
+  }
+
+  .about_detail h4 {
+    font-size: 0.75rem;
+    line-height: 4vw;
+  }
+
+  .about_img img {
+    top: 12vw;
+  }
+
+  .contact_infor h3 {
+    margin: 0.25vw;
+    text-align: center;
+    font-size: 0.25rem;
+  }
+
+  .contact_infor {
+    height: 70vw;
+  }
+
+  #contact {
+    height: 90vw;
+  }
+
+  #bar_button form {
+    top: 4vw;
+  }
+
+  #bar_button button {
+    width: 11vw;
+    height: 6vw;
+  }
+
+  #bar_button button {
+    left: 11vw;
+  }
+
+  #button button {
+    width: 10vw;
+    height: 6vw;
+  }
+  .footer_body input {
+    height: 4vw;
+  }
+
+  #button{
+    margin-top: 2vw;
+  }
+
+  footer {
+    height: 40vw;
   }
 }

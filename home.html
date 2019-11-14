@@ -12,7 +12,6 @@
     <link href="https://fonts.googleapis.com/css?family=Bad+Script|Comfortaa|Monoton|Rajdhani&display=swap" rel="stylesheet">
   </head>
   <body>
-
     <section id="home">
       <div class="home_container">
         <div class="home_header">
@@ -36,11 +35,11 @@
         <h2>MY PROJECTS</h2>
       </div>
       <div class="work" >
-        <div class="works_header">
+        <div class="works_header" id="project1_header">
           <a href="http://www.sfu.ca/~yanhongw/FInal%20project/home.html"><h4> This is my project 1.</h4></a>
           <p>This is the final project of IAT235 course. This project created a website that could show a communicating complexity with a clear manner. The main issue was trying to clear up for stakeholders involves some kind of human-technical-environmental 'thing', like system, process, phenomenon, institution, etc.. In this project, we focused on how the Three Gorges Dam influenced building Local residences’ life and living condition.</p>
         </div>
-        <div class="works_body">
+        <div class="works_body" id="project1_body">
           <video muted autoplay loop controls>
             <source src="img/project1.mp4" type="video/mp4">
           </video>
@@ -48,10 +47,10 @@
       </div>
 
       <div class="work">
-        <div class="works_body">
+        <div class="works_body" id="project2_header">
           <img src="img/0001.jpg" alt="this is the page for project2" class="project-img">
         </div>
-        <div class="works_header">
+        <div class="works_header" id="project2_body">
           <a href="http://www.sfu.ca/~yanhongw/FInal%20project/home.html"><h4> This is my project 2.</h4></a>
           <p>This is a nursery rhyme book with 16 pages. And it is the final project for Publishing 231. This project combinated text and images to create a nursery rhyme book. It asked to examine the expressive of typography and shapes, and understood the connection between meaning with shapes and typographic forms, and graphic elements and typography. And also, this project explored the ideas of sequencing and carrying a narrative within a multi-page format. </p>
         </div>
@@ -103,9 +102,9 @@
               <form>
                 <input type="text" name="name" value="NAME...">
                 <input type="text" name="email" value="EMAIL...">
-                <input type="text" name="subject" value="SUBJECT...">
+                <input type="text" name="subject" value="SUBJECT..." id="input_subject">
                 <textarea name="message" id="message" rows="4"></textarea>
-                <button type="submit"></button>
+                <button type="submit" id="input_button"></button>
               </form>
             </div>
           </div>
