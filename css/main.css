@@ -7,8 +7,9 @@
   box-sizing: border-box;
 }
 
-body{
-  margin: 0;
+.main_body{
+  background-color: rgb(245, 246, 230);
+  padding: 2vw;
 }
 
 

@@ -780,3 +780,53 @@ footer{
     height: 40vw;
   }
 }
+
+
+/* the style for project */
+
+.header_image{
+
+}
+
+#project_wrap{
+  background-color: rgb(255, 255, 255, 0.5);
+}
+
+.header_image video{
+  margin-top: 10vw;
+  width:80%;
+  position: relative;
+  left: 10%;
+  background: white;
+  opacity:0.8;
+}
+
+.header_image video:hover{
+  opacity:1;
+
+}
+
+.header_text{
+  position: relative;
+  bottom: 40vw;
+  text-align: center;
+  color: rgb(0,0,0);
+}
+
+.header_text h1{
+  font-size: 3rem;
+  position: relative;
+  top: 10vw;
+}
+
+.header_text h2{
+}
+
+.header_text a{
+  font-size: 2rem;
+  color: rgb(255,255,255);
+}
+
+.header_text:hover{
+  transform: scale(1.5);
+}
