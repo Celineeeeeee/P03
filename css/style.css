@@ -1,7 +1,23 @@
+body{
+  background-image: url("../img/back.png");
+  background-repeat:no-repeat;
+  background-size: 100%;
+}
+
+.header h2{
+  font-size: 6vw;
+  color:rgb(241, 139, 137);
+  position:absolute;
+  left: 30%;
+}
+
+
+
 /* style for home  */
 #home{
-  background-color: rgb(5, 84, 150);
+  background-color: rgb(5, 84, 150,0.8);
   height: 50vw;
+  margin: 4vw;
 }
 
 .home_container{
@@ -12,8 +28,8 @@
   font-size: 10vw;
   line-height: 14vw;
   position: relative;
-  top: 6vw;
-  left: 8%;
+  top: 4vw;
+  left: 4%;
   color: rgb(245, 246, 230);
   letter-spacing: 1vw;
 }
@@ -23,6 +39,7 @@
   position: absolute;
   left: 38%;
   right: 20%;
+  bottom: 2vw;
 }
 
 .infor{
@@ -33,7 +50,8 @@
 .infor h3{
   color:rgb(255, 255, 255);
   position: relative;
-  top: 6vw;
+  bottom: 4vw;
+  font-size: 1.5rem;
 }
 
 
@@ -144,7 +162,7 @@ input[type="checkbox"]:checked ~ #sidebarMenu {
 
 
 span{
-  color:RGB(241, 139, 137);
+  color:rgb(241, 139, 137);
   left: 2.5vw;
   top: 3vw;
   width: 2vw;
@@ -154,15 +172,323 @@ span{
 /* the style for work section */
 
 #works{
-  background-color: white;
+  background-color: rgb(30,73,76,0.8);
+  margin:4vw;
+  height: 80vw;
+}
+
+.work{
+  display: grid;
+  grid-template-columns: 50% 50%;
+  position: relative;
+  top: 14vw;
+  margin: 0 4vw;
+}
+
+.works_body video{
+  width: 95%;
+  margin: 1vw;
+  padding-top: .5vw;
+}
+
+.works_body{
+  background-color: rgb(241, 139, 137);
+}
+
+.works_body img{
+  width: 70%;
+  height: 80%;
+  position: relative;
+  left: 10%;
+  margin: 2vw;
+}
+
+.works_header{
+  background-color: rgb(5, 84, 150,0.8);
+}
+
+.works_header h4{
+  color: rgb(255,255,255);
+  font-size: 2rem;
+  text-align: center;
+  padding-top: 2vw;
+}
+
+.works_header p{
+  color: rgb(255,255,255);
+  padding: 0 4vw 4vw;
 }
 
 /* the sytle for contact section */
 
 #contact{
-  background-color: blue;
+  background-color: rgb(30,73,76,0.8);
+  height: 80vw;
+  margin: 4vw;
 }
 
 .contact_body{
-  display: inline-block;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  position: relative;
+  top: 18vw;
+  margin: 0 4vw;
+}
+
+.contact_infor{
+  background-color: white;
+  height: 55vw;
+}
+.contact_form{
+  background-color: white;
+}
+
+.contact_infor img{
+  position: relative;
+  text-align: center;
+  left: 25%;
+  width: 50%;
+}
+.contact_icon{
+  position: absolute;
+  bottom: 10vw;
+  left: 10%;
+}
+
+.contact_infor h3{
+  text-align: center;
+}
+
+.contact_header h4{
+  text-align: center;
+  padding-top: 2vw;
+}
+
+
+#bar_button form{
+  background-color:transparent;
+  position: relative;
+  left: 15%;
+}
+.bar input{
+  margin: 1vw;
+  background: transparent;
+}
+
+.bar textarea{
+  width: 28vw;
+  height: 12vw;
+  margin: 1vw
+}
+
+#bar_button button{
+  position: absolute;
+  top: 34vw;
+  left: 21vw;
+}
+
+/* the style for ABOUT section */
+
+#about{
+  background-color: rgb(5, 84, 150,0.8);
+  height: 65vw;
+  margin: 4vw;
+}
+
+.about_detail{
+  position: relative;
+  top: 12vw;
+  margin: 0 8vw;
+}
+
+.about_detail h4{
+  color: white;
+  font-size: 1.5rem;
+  line-height: 3.5vw;
+}
+
+.about_img img{
+  width: 20%;
+  height: 100%;
+  position: relative;
+  top: 12vw;
+  left: 40%;
+}
+
+/* the style for footer */
+
+footer{
+  background-color: rgb(5, 84, 150,0.8);
+  height: 16vw;
+}
+
+.footer_wrap{
+  display: grid;
+  grid-template-columns: 30% 40% 30%;
+  margin: 0 4vw;
+}
+
+.footer_info{
+  margin-top: 4vw;
+}
+
+.footer_link{
+  text-align: center;
+  margin-top: 4vw;
+}
+
+.footer_input{
+  text-align: right;
+  margin-top: 4vw;
+}
+
+.footer_link li{
+  width:18%;
+}
+
+.footer_header h3{
+  color:white;
+}
+
+.footer_detail {
+  display: inline-flex;
+}
+
+.footer_body p{
+  color:white;
+  font-size: 1rem;
+}
+
+.footer_body a{
+  color:rgb(241, 139, 137);
+}
+
+#button button:before{
+  content:"SEND";
+}
+
+#button button {
+    width: 4vw;
+    height: 2vw;
+    background-color: rgb(241,139,137);
+}
+
+.footer_body input{
+  height: 2vw;
+}
+
+
+
+
+/* for responsive */
+
+@media (max-width: 1024px){
+  .home_body {
+    position: relative;
+  }
+
+  .about_detail h4 {
+    font-size: 1.125rem;
+    line-height: 3.75vw;
+  }
+
+  .contact_icon {
+    position: relative;
+    bottom: 0;
+    left: 8%;
+    text-align: center;
+  }
+
+  footer {
+    height: 20vw;
+  }
+}
+
+@media (max-width: 768px){
+  .works_header h4 {
+    font-size: 1rem;
+    padding-top: 0vw;
+  }
+
+  .works_header p {
+    color: rgb(255,255,255);
+    padding: 0 2vw 2vw;
+    font-size: 0.5rem;
+  }
+
+  #works {
+    height: 85vw;
+  }
+
+  #about {
+    height: 70vw;
+  }
+
+  .about_img img {
+    top: 10vw;
+  }
+
+  .about_detail h4 {
+    font-size: 1rem;
+    line-height: 3vw;
+  }
+
+  #contact {
+    height: 75vw;
+  }
+
+  .contact_body {
+    top: 14vw;
+  }
+
+  .contact_infor h3 {
+    margin: 0.5vw;
+    text-align: center;
+    font-size: 0.75rem;
+  }
+
+  .contact_infor {
+    height: 55vw;
+  }
+
+  .contact_icon {
+    top: 2vw;
+  }
+
+  footer {
+    height: 30vw;
+  }
+
+  .footer_body p{
+    font-size: 0.5rem;
+  }
+
+  .footer_body li {
+    display: grid;
+    position: relative;
+    left: 40%;
+  }
+
+  .footer_detail {
+    display: block;
+  }
+
+  #button button {
+    width: 6vw;
+  }
+}
+
+@media (max-width: 414px){
+  .infor h3 {
+    font-size: 1rem;
+  }
+
+  .home_body {
+    left: 30%;
+    bottom: 8vw;
+  }
+
+  .work {
+    display: block;
+  }
 }
