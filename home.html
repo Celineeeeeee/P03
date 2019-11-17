@@ -9,11 +9,12 @@
     <link href="css/main.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
     <link rel="stylesheet" href="css/iconfont.css">
-    <link href="https://fonts.googleapis.com/css?family=Bad+Script|Comfortaa|Monoton|Rajdhani&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Monoton|Rajdhani&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow&display=swap" rel="stylesheet">
   </head>
   <body>
     <div class="background">
-      <img class="background_image" src="img/back.png" alt="">
+      <img src="img/background.png" alt="">
     </div>
     <section id="home">
       <div class="home_container">
@@ -21,41 +22,45 @@
           <h1>HELLO, <br>I AM <span>CELINE.</span></h1>
         </div>
 
-        <div class="infor">
-          <h3>UI DESGIN | GRAPHIC DESGIN</h3>
+        <div class="sub_header">
+          <h2>UI DESGIN | GRAPHIC DESGIN</h2>
+          <div class="home_body">
+            <span class="iconfont">&#xe600;</span>
+            <span class="iconfont">&#xe601;</span>
+            <a href="https://www.pinterest.ca/"><span class="iconfont" >&#xe607;</span></a>
+            <span class="iconfont">&#xe51f;</span>
+          </div>
       </div>
-
-        <div class="home_body">
-          <span class="iconfont">&#xe600;</span>
-          <span class="iconfont">&#xe601;</span>
-          <a href="https://www.pinterest.ca/"><span class="iconfont" >&#xe607;</span></a>
-          <span class="iconfont">&#xe51f;</span>
-        </div>
     </section>
 
     <section id="works">
-      <div class="header">
-        <h2>MY PROJECTS</h2>
-      </div>
-      <div class="work" >
-        <div class="works_header" id="project1_header">
-          <a href="project1.html"><h4> Design Project: Web Design </h4></a>
-          <p>This is the final project of IAT235 course. This project created a website that could show a communicating complexity with a clear manner.</p>
+      <div class="works_container">
+        <div class="header">
+          <h2>MY PROJECTS</h2>
         </div>
-        <div class="works_body" id="project1_body">
-          <video muted autoplay loop controls>
-            <source src="img/project1.mp4" type="video/mp4">
-          </video>
-        </div>
-      </div>
+        <div class="work" >
+          <div class="works_header" >
+            <div id="project1_header">
+              <a href="project1.html"><h4> Design Project: Web Design </h4></a>
+              <p>This website related to THREE GORGES DAM. It asked me to explain how the man-made construction impact to local residents and natures with a clear manner.</p>
+            </div>
 
-      <div class="work">
-        <div class="works_body" id="project2_header">
-          <img src="img/0001.jpg" alt="this is the page for project2" class="project-img">
+          </div>
+          <div class="works_body" id="project1_body">
+            <video controls>
+              <source src="img/project1.mp4" type="video/mp4">
+            </video>
+          </div>
         </div>
-        <div class="works_header" id="project2_body">
-          <a href="project2.html"><h4> Design Project: Nursery Rhyme Book</h4></a>
-          <p>This is a nursery rhyme book with 16 pages. And it is the final project for Publishing 231. This project combinated text and images to create a nursery rhyme book. </p>
+
+        <div class="work">
+          <div class="works_body" id="project2_header">
+            <img src="img/0001.jpg" alt="this is the page for project2" class="project-img">
+          </div>
+          <div class="works_header" id="project2_body">
+            <a href="project2.html"><h4> Design Project: Nursery Rhyme Book</h4></a>
+            <p>This is a nursery rhyme book with 16 pages. And it is the final project for Publishing 231. This project combinated text and images to create a nursery rhyme book. </p>
+          </div>
         </div>
       </div>
     </section>
@@ -118,21 +123,18 @@
 
     <!-- navigation -->
     <section id="navigation">
-      <input type="checkbox" class="openSidebarMenu" id="openSidebarMenu">
-      <label for="openSidebarMenu" class="sidebarIconToggle">
-        <div id="sidebar" class="sidebar_01">
-          <span class="iconfont" id="menu">&#xec3a;</span>
+      <nav>
+        <div id="mySidenav" class="sidenav">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+          <div class="nav_items">
+            <a href="#home">HOME</a>
+            <a href="#works">WORKS</a>
+            <a href="#about">ABOUT</a>
+            <a href="#contact">CONTACT</a>
+          </div>
         </div>
-      </label>
-      <div id="sidebarMenu">
-        <ul class="sidebarMenuInner" >
-          <li><a href="#home">HOME</a></li>
-          <li><a href="#about">ABOUT</a></li>
-          <li><a href="#works">WORKS</a></li>
-          <li><a href="#contact">CONTACT</a></li>
-          <li><a href="index.html">STYLE GUIDE</a></li>
-        </ul>
-      </div>
+        <span style="font-size:30px;cursor:pointer" onclick="openNav()" id="menu"><img src="img/menu01.png" alt=""></span>
+      </nav>
     </section>
 
 
@@ -181,5 +183,6 @@
         </div>
       </div>
     </footer>
+    <script type="text/javascript" src="js/main.js"></script>
   </body>
 </html>

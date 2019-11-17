@@ -9,16 +9,16 @@
 
 .iconfont {
   font-family: "iconfont" !important;
-  font-size: 2vw;
+  font-size: 1.5vw;
   font-style: normal;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  padding-right: 5vw;
-  color:rgb(241, 139, 137);
+  padding-right: 2vw;
+  color:rgb(245, 246, 230);
 }
 
 .iconfont:hover{
-  color: rgb(5, 84, 150);
+  color: rgb(241, 139, 137);
 }
 
 .icon-facebookfacebook51:before {
@@ -35,24 +35,4 @@
 
 .icon-instagram:before {
   content: "\e51f";
-}
-
-
-@font-face {font-family: "iconfont";
-  src: url('iconfont.eot?t=1573620747225'); /* IE9 */
-  src: url('iconfont.eot?t=1573620747225#iefix') format('embedded-opentype'), /* IE6-IE8 */
-  url('data:application/x-font-woff2;charset=utf-8;base64,d09GMgABAAAAAAJ8AAsAAAAABigAAAIwAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHEIGVgCCcAo0UgE2AiQDCAsGAAQgBYRtBy4bdgUR1Ys9si+hHNtRIDKbszzDPAlg9icsx3F6cAAXOIECAAAAAOIhfr9vZ96dVU2qcbs6mlQToZgkSI0QCYlmEgqfSN7FOXNQQMJFqJGcPXn0gxSHaU7CqzMGHCyDYgCwnhM8Xz2w0PovAFqH6i++AZfTn0AP8l8dUG572tibBmAcUKB7YBRZCWXcMHaBS3hMoNmQBbF+3j+rUbJWBeKBvX1VYy4oJcs0CvU1B1O8gzqN1ZvpwNvw+/E3i1KpK6ya41sbNyzX2Dn4u+ATECKg43UoWEASZ2uTh4pgXNF8Oo0hpaDmsVPs1SbYX2eVt4IBmApq3CcEqECi9BztGOWjpFV/ed8pujzAJx89ct6n4OzJn3DecpdfPZ6CQPB5Id/2v9EE35+hNfVz07iyLkbKfoKi51DqKstRpaqozVZalZ13NGvGCfZ2+zPW3HfGbGjUd153g8EURaMJMtkF1GmxiHqNltBs3tbxFj0eKiKbMOcFQOj0HpV2H1B0+kgm+xt1+v1Dvc4Imp0PF7aYCssuDkyFUI3lD23Vd8pxySKqvJJ+NQVnVSH/JA42gmmUFDMX6ojn2BLeOhNRqLhv8Qyeo6bpceDeUSWRERnyOFZ1b4qqvoUFHJgKoRrLH9qq75Q/WRalz19Jv5qCWwZq0k/iYGfHNEp6kBd912vgXl4Jb52JKFTct3gG86hpehzq5zmqJDIj4kMe2+NUX320vrH9ulMALMCyTCd2YzFvqXsBAAAA') format('woff2'),
-  url('iconfont.woff?t=1573620747225') format('woff'),
-  url('iconfont.ttf?t=1573620747225') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+ */
-  url('iconfont.svg?t=1573620747225#iconfont') format('svg'); /* iOS 4.1- */
-}
-
-
-.icon-menu:before {
-  content: "\ec3a";
-}
-
-#menu{
-  color:rgb(123, 167, 171);
-  font-size: 8vw;
 }
