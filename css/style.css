@@ -1,7 +1,6 @@
+
 body{
-  /* background-image: url("../img/back.png");
-  background-repeat:no-repeat;
-  background-size: 100%; */
+  margin: 0;
 }
 
 /* style for home  */
@@ -59,7 +58,7 @@ span{
 }
 
 .sub_header h2{
-  color:rgb(245, 246, 230);
+  color:rgb(241, 139, 137);
   position: relative;
   bottom: 4vw;
   font-size: 1.5rem;
@@ -127,7 +126,7 @@ span{
 #works{
   background-color: rgb(245, 246, 230,0.8);
   margin:4vw;
-  height: 80vw;
+  height: 70vw;
 }
 
 .header {
@@ -138,7 +137,7 @@ span{
 
 .header h2{
   font-size: 6vw;
-  color:rgb(0,0,0);
+  color:rgb(5, 84, 150);
 }
 
 .work{
@@ -153,53 +152,99 @@ span{
   background-color: rgb(5, 84, 150);
 }
 
+.works_header span{
+  font-size: 1rem;
+}
+
+.works_header h4{
+  color: rgb(255,255,255);
+  font-size: 2rem;
+  text-align: center;a
+  padding-top: 2vw;
+}
+.works_header p{
+  color: rgb(255,255,255);
+  padding: 0 4vw 4vw;
+  font-size: 1rem;
+}
+
 #project1_header{
   padding: 2vw;
 }
 
+.button{
+  position: relative;
+  text-align: center;
+  bottom: 3vw;
+}
+.button a:hover{
+  color:white;
+}
+.button button{
+  z-index: 1;
+  color: rgb(255,255,255);
+  background: rgb(241, 139, 137);
+  padding: 0.5em 1em;
+  width: 8vw;
+}
+.button button:hover {
+  cursor: pointer;
+  animation: jelly 0.5s;
+}
+@keyframes jelly {
+  0%,
+  100% {
+    transform: scale(1, 1);
+  }
+
+  33% {
+    transform: scale(0.9, 1.1);
+  }
+
+  66% {
+    transform: scale(1.1, 0.9);
+  }
+}
 
 #project1_header h4:hover{
   transform: scale(1.25);
   color:rgb(241, 139, 137);
 }
 
-.works_body video{
+.works_detail video{
   width: 95%;
   margin: 1vw;
   padding-top: .5vw;
 }
-
-.works_body{
+.works_detail{
   background-color: rgb(241, 139, 137);
 }
-
-.works_body img{
-  width: 70%;
-  height: 80%;
+.works_detail img{
+  width: 50%;
+  height: 50%;
   position: relative;
-  left: 10%;
+  left: 20%;
   margin: 2vw;
 }
 
-
-
-.works_header h4{
-  color: rgb(255,255,255);
-  font-size: 2rem;
-  text-align: center;
-  padding-top: 2vw;
+#project2_body {
+  padding: 2vw;
+}
+#project2_body h4:hover{
+  transform: scale(1.25);
+  color:rgb(241, 139, 137);
 }
 
-.works_header p{
-  color: rgb(255,255,255);
-  padding: 0 4vw 4vw;
+.works_detail img:hover{
+  transform: scale(1);
+  color: white;
 }
 
 /* the sytle for contact section */
 
 #contact{
-  background-color: rgb(30,73,76,0.8);
-  height: 80vw;
+  background-color: rgb(245, 246, 230,0.8);
+  height: 65vw;
   margin: 4vw;
 }
 
@@ -207,40 +252,48 @@ span{
   display: grid;
   grid-template-columns: 50% 50%;
   position: relative;
-  top: 18vw;
+  top: 10vw;
   margin: 0 4vw;
 }
 
 .contact_infor{
-  background-color: white;
-  height: 55vw;
+  background-color: rgb(123, 167, 171);
+  height: 49vw;
 }
-.contact_form{
-  background-color: white;
-}
-
 .contact_infor img{
   position: relative;
   text-align: center;
   left: 25%;
   width: 50%;
 }
-.contact_icon{
-  position: absolute;
-  bottom: 10vw;
-  left: 10%;
+.contact_form{
+  background-color: white;
 }
-
+.contact_icon{
+  text-align: center;
+}
 .contact_infor h3{
   text-align: center;
   color:black;
 }
-
 .contact_header h4{
+  font-size: 1.5rem;
+  letter-spacing: 0.1rem;
   text-align: center;
   padding-top: 2vw;
 }
+.contact_infor p{
+  color: rgb(255,255,255);
+  font-size: 1.25rem;
+  line-height: 2.25vw;
+  letter-spacing: 0.1rem;
+  text-indent : 2rem;
+  text-align: center;
+}
 
+#bar_button {
+    padding-top: 0vw;
+}
 
 #bar_button form{
   background-color:transparent;
@@ -260,7 +313,7 @@ span{
 
 #bar_button button{
   position: absolute;
-  top: 34vw;
+  top: 32vw;
   left: 21vw;
 }
 
@@ -268,55 +321,77 @@ span{
 
 #about{
   background-color: rgb(5, 84, 150,0.8);
-  height: 65vw;
+  height: 60vw;
   margin: 4vw;
 }
 
-.about_detail{
+#about h2{
+  color: rgb(245, 246, 230);
+}
+
+.about_text{
   position: relative;
-  top: 12vw;
+  top: 10vw;
   margin: 0 8vw;
 }
 
-.about_detail h4{
-  color: white;
-  font-size: 1.5rem;
-  line-height: 3.5vw;
+.about_text p{
+  color: rgb(245, 246, 230);
+  font-size: 1.25rem;
+  line-height: 2.25vw;
+  letter-spacing: 0.1rem;
+  text-indent : 2rem;
 }
 
 .about_img img{
   width: 20%;
   height: 100%;
   position: relative;
-  top: 12vw;
+  top: 10vw;
   left: 40%;
+  margin-top: 0;
+}
+
+.about_img_icon {
+  display: grid;
+  grid-template-columns: 20% 20% 20% 20% 20%;
+  width: 50%;
+  position: relative;
+  left: 25%;
+}
+
+.about_img_icon img{
+  width: 4vw;
+  height: 4vw;
+  text-align: center;
+  margin-top: 0;
 }
 
 /* the style for footer */
 
 footer{
-  background-color: rgb(5, 84, 150,0.8);
-  height: 16vw;
+  background-color: rgb(5, 84, 150);
+  height: -webkit-fill-available;
 }
 
 .footer_wrap{
   display: grid;
   grid-template-columns: 30% 40% 30%;
-  margin: 0 4vw;
+  margin: 0 2vw;
 }
 
 .footer_info{
-  margin-top: 4vw;
+  margin: 2vw 0 2vw 2vw;
 }
 
 .footer_link{
   text-align: center;
-  margin-top: 4vw;
+  margin: 2vw 0;
 }
 
 .footer_input{
   text-align: right;
-  margin-top: 4vw;
+  margin: 2vw 2vw 2vw 0;
 }
 
 .footer_link li{
@@ -324,7 +399,9 @@ footer{
 }
 
 .footer_header h3{
+  letter-spacing: 0.1rem;
   color:white;
+  text-transform: uppercase;
 }
 
 .footer_detail {
@@ -469,17 +546,34 @@ footer{
 /* responsive for mobile drive*/
 @media screen and (max-width: 1100px) {
 
-  .about_detail h4 {
+  .works_detail video {
+    height: auto;
+    padding-top: 1vw;
+  }
+
+  .works_detail img {
+    height: 70%;
+    top: 2vw;
+    margin: 2vw;
+  }
+
+  .about_text p {
+    font-size: 1rem;
+    line-height: 2vw;
+  }
+
+  .about_text h4 {
     font-size: 1.25rem;
     line-height: 3.25vw;
   }
 
-  .contact_icon {
-    bottom: 6vw;
+  .contact_infor p {
+    font-size: 1rem;
   }
   .works_header h4 {
     font-size: 1.75rem;
   }
+
   .project_body{
     height: 155vw;
   }
@@ -494,23 +588,32 @@ footer{
     bottom: 4vw;
   }
 
+  #works {
+    height: 74vw;
+  }
+
   .works_header h4 {
     font-size: 1.5rem;
   }
 
-  #home {
-    height: 45vw;
+  .works_detail video {
+    padding-top: 1.5vw;
   }
 
-  .contact_icon {
-    position: relative;
-    bottom: 0;
-    left: 8%;
-    text-align: center;
+  .works_detail img {
+    top: 2.5vw;
+  }
+
+  #home {
+    height: 40vw;
+  }
+
+  #bar_button {
+    padding-top: 0;
   }
 
   footer {
-    height: 20vw;
+    height: -webkit-fill-available;
   }
 
   .header_text h1 {
@@ -530,30 +633,50 @@ footer{
 
 @media screen and (max-width: 978px) {
 
-
   .home_body {
     bottom: 4vw;
-    left: 35%;
+    left: 2%;
+  }
+
+  .works_detail video {
+    height: 88%;
+    padding-top: 0vw;
   }
 
   #works {
     height: 75vw;
   }
 
-  .about_detail h4 {
+  .about_text h4 {
     line-height: 3.5vw;
   }
 
-  .works_body video {
-    height: 100%;
-  }
-
   #about {
-    height: 70vw;
+    height: 62vw;
   }
 }
 
 @media (max-width: 768px){
+
+  .sub_header h2 {
+    bottom: 5vw;
+    font-size: 1rem;
+  }
+
+  .home_body {
+    bottom: 5vw;
+  }
+
+  .about_text p {
+    font-size: 1rem;
+    line-height: 2.5vw;
+    letter-spacing: 0;
+  }
+
+  #about {
+    height: 68vw;
+  }
+
   .works_header h4 {
     font-size: 1rem;
     padding-top: 0vw;
@@ -565,15 +688,11 @@ footer{
     font-size: 0.5rem;
   }
 
-  #about {
-    height: 70vw;
-  }
-
   .about_img img {
     top: 10vw;
   }
 
-  .about_detail h4 {
+  .about_text h4 {
     font-size: 1rem;
   }
 
@@ -582,7 +701,12 @@ footer{
   }
 
   .contact_body {
-    top: 14vw;
+    top: 10vw;
+  }
+
+  .contact_infor p {
+    font-size: 0.75rem;
+    letter-spacing: 0;
   }
 
   .contact_infor h3 {
@@ -597,10 +721,6 @@ footer{
 
   .contact_icon {
     top: 2vw;
-  }
-
-  footer {
-    height: 30vw;
   }
 
   .footer_body p{
@@ -639,33 +759,73 @@ footer{
 /* PC responsive*/
 
 @media screen and (max-width: 520px) {
-  .infor h3 {
-    font-size: 1rem;
+
+  #menu img {
+    width: 10%;
+    height: 10%;
   }
 
-  .home_body {
-    bottom: 7vw;
+  .home_header h1 {
+    line-height: 12vw;
   }
 
-  #works {
-    height: 80vw;
+  .sub_header h2 {
+    font-size: 0.75rem;
+    letter-spacing: 0.15rem;
+  }
+
+  .works_header p {
+    font-size: 0.1rem;
+    line-height: 1rem;
+    margin: 0;
+  }
+
+  .works_header span {
+    font-size: 0.1rem;
   }
 
   .works_header h4 {
+    font-size: 0.8rem;
+  }
+
+  .button {
+    bottom: 1vw;
+    margin-bottom: 2vw;
+  }
+
+  .button button {
+    width: 12vw;
+  }
+
+  .works_detail video {
+    height: 82%;
+  }
+
+  .works_detail img {
+    width: 70%;
+    left: 10%;
+    top: 4.5vw;
+  }
+
+  #works {
+    height: 105vw;
+  }
+
+  .about_text p {
     font-size: 0.75rem;
+    text-indent: 1rem;
   }
 
   #about {
-    height: 80vw;
-  }
-
-  .about_detail h4 {
-    font-size: 0.75rem;
-    line-height: 4vw;
+    height: 74vw;
   }
 
   .about_img img {
-    top: 12vw;
+    top: 10vw;
+  }
+
+  .infor h3 {
+    font-size: 1rem;
   }
 
   .contact_infor h3 {
@@ -674,11 +834,27 @@ footer{
   }
 
   .contact_infor {
-    height: 70vw;
+    height: 65vw;
   }
 
   #contact {
-    height: 90vw;
+    height: 85vw;
+  }
+
+  .contact_infor p {
+    font-size: 0.75rem;
+    letter-spacing: 0;
+    text-indent: 0;
+    line-height: 1rem;
+  }
+
+  .contact_infor img {
+    bottom: 2vw;
+    margin-top: 0;
+  }
+
+  #bar_button button {
+    left: 18vw;
   }
 
   #bar_button form {
@@ -690,24 +866,21 @@ footer{
     height: 6vw;
   }
 
-  #bar_button button {
-    left: 11vw;
+  .contact_header h4 {
+    font-size: 1rem;
   }
 
   #button button {
     width: 10vw;
     height: 6vw;
   }
+
   .footer_body input {
     height: 4vw;
   }
 
   #button{
     margin-top: 2vw;
-  }
-
-  footer {
-    height: 40vw;
   }
 
   .header_text h1 {
@@ -764,7 +937,7 @@ footer{
     font-size: 0.5rem;
   }
 
-  .works_body {
+  .works_detail {
     background-color:rgb(255, 255, 255);
     text-align: center;
   }
@@ -783,7 +956,7 @@ footer{
     margin-top: 10vw;
   }
 
-  .works_body img {
+  .works_detail img {
     width: 50%;
     height: 60%;
     left: 0;
@@ -798,7 +971,7 @@ footer{
     height: 100vw;
   }
 
-  .about_detail h4 {
+  .about_text h4 {
     font-size: 0.5rem;
     line-height: 5vw;
   }
