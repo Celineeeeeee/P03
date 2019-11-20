@@ -21,12 +21,31 @@ body{
 
 #home{
   background-color: rgb(5, 84, 150,0.8);
-  height: 45vw;
-  margin: 0 4vw;
+  margin: 8vw 4vw;
 }
 
 .home_container{
   margin:4vw;
+}
+
+.home_header h1{
+  font-size: 10vw;
+  line-height: 14vw;
+  padding: 4vw 2vw 1vw;
+  color: rgb(245, 246, 230);
+  letter-spacing: 1vw;
+  margin: 0;
+}
+
+.sub_header{
+  text-align: center;
+  padding-bottom: 4vw;
+}
+
+.sub_header h2{
+  color:rgb(241, 139, 137);
+  color: rgb(241, 139, 137);
+  margin-top: 0;
 }
 
 span{
@@ -36,34 +55,6 @@ span{
   width: 2vw;
   height: 2vw;
 }
-
-.home_header h1{
-  font-size: 10vw;
-  line-height: 14vw;
-  position: relative;
-  top: 4vw;
-  left: 4%;
-  color: rgb(245, 246, 230);
-  letter-spacing: 1vw;
-}
-
-.home_body{
-  position: relative;
-  bottom: 3vw;
-}
-
-.sub_header{
-  text-align: center;
-  margin-top: 4vw;
-}
-
-.sub_header h2{
-  color:rgb(241, 139, 137);
-  position: relative;
-  bottom: 4vw;
-  font-size: 1.5rem;
-}
-
 
 /* side navigation */
 
@@ -125,26 +116,22 @@ span{
 
 #works{
   background-color: rgb(245, 246, 230,0.8);
-  margin:4vw;
-  height: 70vw;
+  margin:0 4vw;
 }
 
 .header {
-  position: relative;
   text-align: center;
-  top: 6vw;
 }
 
 .header h2{
   font-size: 6vw;
   color:rgb(5, 84, 150);
+  padding: 4vw;
 }
 
 .work{
   display: grid;
   grid-template-columns: 50% 50%;
-  position: relative;
-  top: 10vw;
   margin: 0 4vw;
 }
 
@@ -152,31 +139,51 @@ span{
   background-color: rgb(5, 84, 150);
 }
 
-.works_header span{
-  font-size: 1rem;
+#project1_header{
+  padding: 4vw 2vw;
 }
 
 .works_header h4{
   color: rgb(255,255,255);
   font-size: 2rem;
-  text-align: center;a
-  padding-top: 2vw;
-}
-.works_header p{
-  color: rgb(255,255,255);
-  padding: 0 4vw 4vw;
-  font-size: 1rem;
-}
-
-#project1_header{
+  text-align: center;
+  margin: 0;
   padding: 2vw;
 }
 
-.button{
-  position: relative;
-  text-align: center;
-  bottom: 3vw;
+.works_header p{
+  color: rgb(255,255,255);
+  padding: 2vw;
+  font-size: 1rem;
+  margin: 0;
 }
+
+.button{
+  text-align: center;
+  padding: 2vw;
+}
+
+.works_detail video{
+  width: 100%;
+  height: auto;
+  padding: 1vw;
+}
+
+.works_detail img{
+  width: 80%;
+  height: auto;
+  padding: 0 0 2vw 8vw;
+}
+
+.works_header span{
+  font-size: 1rem;
+}
+
+
+
+
+
+
 .button a:hover{
   color:white;
 }
@@ -211,21 +218,11 @@ span{
   color:rgb(241, 139, 137);
 }
 
-.works_detail video{
-  width: 95%;
-  margin: 1vw;
-  padding-top: .5vw;
-}
+
 .works_detail{
   background-color: rgb(241, 139, 137);
 }
-.works_detail img{
-  width: 50%;
-  height: 50%;
-  position: relative;
-  left: 20%;
-  margin: 2vw;
-}
+
 
 #project2_body {
   padding: 2vw;
@@ -544,7 +541,7 @@ footer{
 
 
 /* responsive for mobile drive*/
-@media screen and (max-width: 1100px) {
+/* @media screen and (max-width: 1100px) {
 
   .works_detail video {
     height: auto;
@@ -572,11 +569,11 @@ footer{
   .project_body{
     height: 155vw;
   }
-}
+} */
 
 
 
-
+/*
 @media (max-width: 1024px){
   .home_body {
     position: relative;
@@ -624,9 +621,9 @@ footer{
   .project_body {
     height: 160vw;
   }
-}
+} */
 
-@media screen and (max-width: 978px) {
+/* @media screen and (max-width: 978px) {
 
   .home_body {
     bottom: 4vw;
@@ -645,9 +642,9 @@ footer{
   #about {
     height: 62vw;
   }
-}
+} */
 
-@media (max-width: 768px){
+/* @media (max-width: 768px){
 
   .sub_header h2 {
     bottom: 5vw;
@@ -662,6 +659,10 @@ footer{
     bottom: 5vw;
   }
 
+  #works {
+    height: 78vw;
+  }
+
   .about_text p {
     line-height: 2.5vw;
     letter-spacing: 0;
@@ -670,6 +671,7 @@ footer{
   .about_text {
     margin: 0 4vw;
   }
+
 
   #about {
     height: 68vw;
@@ -748,11 +750,11 @@ footer{
   .project_body {
     height: 206vw;
   }
-}
+} */
 
 /* PC responsive*/
 
-@media screen and (max-width: 520px) {
+/* @media screen and (max-width: 520px) {
 
   #menu img {
     width: 10%;
@@ -1221,5 +1223,4 @@ footer{
   .sidenav a {
     padding: 8vw;
   }
-
-}
+} */
