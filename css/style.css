@@ -532,6 +532,47 @@ footer{
   margin-top: 0;
 }
 
+/* the style for project */
+
+#project2_header {
+  text-align: left;
+}
+#project2_header h2{
+  color: white;
+}
+.heade_main h1 {
+  font-size: 4rem;
+  line-height: 4.5rem;
+}
+
+#project2_header u{
+  color: white;
+}
+
+
+#color-square_1, #color-square_2,#color-square_3{
+  width:20vw;
+  height: 20vh;
+  margin-right: 2vw;
+}
+
+#color-square_1{
+  background-color:rgb(164, 103, 49);
+}
+#color-square_2{
+  background-color:rgb(255, 255, 255);
+}
+#color-square_3{
+  background-color:rgb(34, 30, 29);
+}
+
+#section_3 h3 {
+  text-align: right;
+}
+
+#section_3 p {
+  padding: 0 6vw;
+}
 
 /* responsive for mobile drive*/
 
