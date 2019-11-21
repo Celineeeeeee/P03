@@ -135,15 +135,22 @@ span{
   margin: 0 4vw;
 }
 
-.works_header{
+.works_text{
   background-color: rgb(5, 84, 150);
+}
+
+.works_detail{
+  background-color: rgb(241, 139, 137);
 }
 
 #project1_header{
   padding: 4vw 2vw;
 }
+#project2_body{
+  padding: 4vw 2vw;
+}
 
-.works_header h4{
+.works_text h4{
   color: rgb(255,255,255);
   font-size: 2rem;
   text-align: center;
@@ -151,11 +158,12 @@ span{
   padding: 2vw;
 }
 
-.works_header p{
+.works_text p{
   color: rgb(255,255,255);
-  padding: 2vw;
+  padding: 0 2vw;
   font-size: 1rem;
   margin: 0;
+  line-height: 1.25rem;
 }
 
 .button{
@@ -169,20 +177,9 @@ span{
   padding: 1vw;
 }
 
-.works_detail img{
-  width: 80%;
-  height: auto;
-  padding: 0 0 2vw 8vw;
-}
-
-.works_header span{
+.works_text span{
   font-size: 1rem;
 }
-
-
-
-
-
 
 .button a:hover{
   color:white;
@@ -194,10 +191,12 @@ span{
   padding: 0.5em 1em;
   width: 8vw;
 }
+
 .button button:hover {
   cursor: pointer;
   animation: jelly 0.5s;
 }
+
 @keyframes jelly {
   0%,
   100% {
@@ -218,18 +217,15 @@ span{
   color:rgb(241, 139, 137);
 }
 
-
-.works_detail{
-  background-color: rgb(241, 139, 137);
-}
-
-
-#project2_body {
-  padding: 2vw;
-}
 #project2_body h4:hover{
   transform: scale(1.25);
   color:rgb(241, 139, 137);
+}
+
+.works_detail img{
+  width: 80%;
+  height: auto;
+  padding: 0 0 2vw 8vw;
 }
 
 .works_detail img:hover{
@@ -237,40 +233,48 @@ span{
   color: white;
 }
 
+.works_container{
+  padding-bottom: 4vw;
+}
+
+
 /* the sytle for contact section */
 
 #contact{
   background-color: rgb(245, 246, 230,0.8);
-  height: 65vw;
   margin: 4vw;
 }
 
 .contact_body{
   display: grid;
   grid-template-columns: 50% 50%;
-  position: relative;
-  top: 10vw;
-  margin: 0 4vw;
+  padding: 0 4vw 4vw 4vw;
 }
 
 .contact_infor{
   background-color: rgb(123, 167, 171);
-  height: 49vw;
+  text-align: center;
 }
 .contact_infor img{
-  position: relative;
-  text-align: center;
-  left: 25%;
   width: 50%;
+  height: auto;
 }
-.contact_form{
+
+.contact_infor p{
+  color: rgb(255,255,255);
+  font-size: 1.25rem;
+  line-height: 2rem;
+}
+
+.contact_icon{
+  padding-bottom: 2vw;
+}
+
+.contact_detail{
   background-color: white;
 }
-.contact_icon{
-  text-align: center;
-}
+
 .contact_infor h3{
-  text-align: center;
   color:black;
 }
 .contact_header h4{
@@ -279,46 +283,38 @@ span{
   text-align: center;
   padding-top: 2vw;
 }
-.contact_infor p{
-  color: rgb(255,255,255);
-  font-size: 1.25rem;
-  line-height: 2.25vw;
-  letter-spacing: 0.1rem;
-  text-indent : 2rem;
-  text-align: center;
+
+form{
+  background-color: rgb(255,255,255);
 }
 
-#bar_button {
-    padding-top: 0vw;
-}
-
-#bar_button form{
-  background-color:transparent;
-  position: relative;
-  left: 15%;
-}
 .bar input{
   margin: 1vw;
   background: transparent;
 }
 
 .bar textarea{
+  margin: 0;
   width: 28vw;
   height: 12vw;
-  margin: 1vw
+  position: relative;
+  left: 17%;
 }
 
-#bar_button button{
-  position: absolute;
-  top: 32vw;
-  left: 21vw;
+.button button{
+  position: inherit;
 }
+
+#bar_button{
+  background-color:transparent;
+  text-align: center;
+}
+
 
 /* the style for ABOUT section */
 
 #about{
   background-color: rgb(5, 84, 150,0.8);
-  height: 60vw;
   margin: 4vw;
 }
 
@@ -326,42 +322,28 @@ span{
   color: rgb(245, 246, 230);
 }
 
+.about_detail{
+  display: inline-grid;
+  grid-template-columns: 35% 65%;
+}
+
+.about_img img{
+  width: 50%;
+  height: auto;
+  float:right;
+}
+
 .about_text{
-  position: relative;
-  top: 10vw;
-  margin: 0 8vw;
+  padding: 1vw;
 }
 
 .about_text p{
   color: rgb(245, 246, 230);
   font-size: 1.25rem;
-  line-height: 2.25vw;
-  letter-spacing: 0.1rem;
-  text-indent : 2rem;
-}
-
-.about_img img{
-  width: 20%;
-  height: 100%;
-  position: relative;
-  top: 10vw;
-  left: 40%;
-  margin-top: 0;
-}
-
-.about_img_icon {
-  display: grid;
-  grid-template-columns: 20% 20% 20% 20% 20%;
-  width: 50%;
-  position: relative;
-  left: 25%;
-}
-
-.about_img_icon img{
-  width: 4vw;
-  height: 4vw;
-  text-align: center;
-  margin-top: 0;
+  line-height: 1.5vw;
+  text-indent: 2rem;
+  margin: 0;
+  padding: 8vw 10vw 2vw 4vw;
 }
 
 /* the style for footer */
@@ -378,17 +360,17 @@ footer{
 }
 
 .footer_info{
-  margin: 2vw 0 2vw 2vw;
+  padding: 2vw 0 2vw 2vw;
 }
 
 .footer_link{
   text-align: center;
-  margin: 2vw 0;
+  padding: 2vw 0;
 }
 
 .footer_input{
   text-align: right;
-  margin: 2vw 2vw 2vw 0;
+  padding: 2vw 2vw 2vw 0;
 }
 
 .footer_link li{
@@ -414,18 +396,22 @@ footer{
   color:rgb(241, 139, 137);
 }
 
-#button button:before{
+#footer_button button:before{
   content:"SEND";
 }
 
-#button button {
-    width: 4vw;
-    height: 2vw;
-    background-color: rgb(241,139,137);
+#footer_button button {
+  width: 6vw;
+  background-color: rgb(241,139,137);
 }
 
+#footer_button{
+  padding: 0;
+}
+
+
 .footer_body input{
-  height: 2vw;
+  height: 2.1vw;
 }
 
 
@@ -541,220 +527,156 @@ footer{
 
 
 /* responsive for mobile drive*/
-/* @media screen and (max-width: 1100px) {
 
+ @media screen and (max-width: 1100px) {
+
+   .works_text h4 {
+     font-size: 1.75rem;
+   }
   .works_detail video {
     height: auto;
-    padding-top: 1vw;
-  }
-
-  .works_detail img {
-    height: 70%;
-    top: 2vw;
-    margin: 2vw;
-  }
-
-  .about_text p {
-    font-size: 1rem;
-    line-height: 2vw;
-  }
-
-  .contact_infor p {
-    font-size: 1rem;
-  }
-  .works_header h4 {
-    font-size: 1.75rem;
-  }
-
-  .project_body{
-    height: 155vw;
-  }
-} */
-
-
-
-/*
-@media (max-width: 1024px){
-  .home_body {
-    position: relative;
-    bottom: 4vw;
-  }
-
-  #works {
-    height: 74vw;
-  }
-
-  .works_header h4 {
-    font-size: 1.5rem;
-  }
-
-  .works_detail video {
-    padding-top: 1.5vw;
-  }
-
-  .works_detail img {
-    top: 2.5vw;
-  }
-
-  #home {
-    height: 40vw;
-  }
-
-  #bar_button {
-    padding-top: 0;
-  }
-
-  footer {
-    height: -webkit-fill-available;
-  }
-
-  .header_text h1 {
-    top: 4vw;
-  }
-
-  .header_text h2 {
-    margin-top: 5vw;
-    position: relative;
-    top: 4vw;
-  }
-
-  .project_body {
-    height: 160vw;
-  }
-} */
-
-/* @media screen and (max-width: 978px) {
-
-  .home_body {
-    bottom: 4vw;
-    left: 2%;
-  }
-
-  .works_detail video {
-    height: 88%;
-    padding-top: 0vw;
-  }
-
-  #works {
-    height: 75vw;
-  }
-
-  #about {
-    height: 62vw;
-  }
-} */
-
-/* @media (max-width: 768px){
-
-  .sub_header h2 {
-    bottom: 5vw;
-    font-size: 1rem;
-  }
-
-  .sidenav a {
-    padding: 4vw;
-  }
-
-  .home_body {
-    bottom: 5vw;
-  }
-
-  #works {
-    height: 78vw;
+    padding: 3vw 2vw 2vw 2vw;
   }
 
   .about_text p {
     line-height: 2.5vw;
-    letter-spacing: 0;
   }
 
-  .about_text {
-    margin: 0 4vw;
-  }
-
-
-  #about {
-    height: 68vw;
-  }
-
-  .works_header h4 {
-    font-size: 1rem;
-    padding-top: 0vw;
-  }
-
-  .works_header p {
-    color: rgb(255,255,255);
-    padding: 0 2vw 2vw;
+  #footer_button button:before {
     font-size: 0.5rem;
   }
+  .footer_body input{
+    height: 2.7vw;
+  }
+}
 
-  .about_img img {
-    top: 10vw;
+@media (max-width: 1024px){
+
+  .home_header h1{
+    padding: 3vw 2vw 1vw;
   }
 
-  #contact {
-    height: 75vw;
+  .works_detail video {
+    padding-top: 3.5vw;
   }
-
-  .contact_body {
-    top: 10vw;
+  .works_text h4 {
+    font-size: 1.5rem;
   }
 
   .contact_infor p {
+    font-size: 1.25rem;
+  }
+
+  #footer_button button{
+    width: 6vw;
+    height: 3vw;
+  }
+  .footer_body input{
+    height: 2.9vw;
+  }
+
+
+  .project_body {
+    height: 160vw;
+  }
+}
+
+@media screen and (max-width: 978px) {
+
+  .works_detail video{
+    padding-top: 4vw;
+  }
+}
+
+@media (max-width: 768px){
+
+  #menu img {
+    width: 10%;
+    height: 10%;
+  }
+
+  .home_header h1{
+    line-height: 6rem;
+  }
+
+  .footer_input {
+    padding: 2vw 0 2vw 0;
+  }
+
+  .works_text h4 {
+    font-size: 1rem;
+    padding-top: 0vw;
+  }
+  .works_text p {
+    font-size: 0.75rem;
+    line-height: 1rem;
+  }
+
+  .about_detail {
+    display: block;
+    text-align: center;
+  }
+  .about_img img {
+    width: 20%;
+    float: none;
+  }
+  .about_text p {
+    font-size: 1rem;
+    line-height: 1rem;
+    text-align: left;
+    padding: 2vw 4vw;
+  }
+
+  .contact_infor img {
+    margin-top: 0;
+  }
+  .contact_infor p {
     font-size: 0.75rem;
     letter-spacing: 0;
+    line-height: 1rem;
   }
 
-  .contact_infor h3 {
-    margin: 0.5vw;
-    text-align: center;
-    font-size: 0.75rem;
+  #bar_button{
+    padding-top: 0;
+  }
+  #bar_button button {
+    width: 12vw;
+    padding: 0;
   }
 
-  .contact_infor {
-    height: 55vw;
+  .footer_wrap {
+    grid-template-columns: 30% 50% 20%;
   }
-
-  .contact_icon {
-    top: 2vw;
-  }
-
   .footer_body p{
     font-size: 0.5rem;
   }
-
   .footer_body li {
     display: grid;
     position: relative;
     left: 40%;
   }
-
   .footer_detail {
     display: block;
   }
-
-  #button button {
-    width: 6vw;
+  #footer_button {
+    float: right;
+    padding-top: 1vw;
+  }
+  #footer_button button {
+    width: 8vw;
+    height: 3.5vw;
   }
 
-  .header_text h1 {
-    font-size: 2rem;
-  }
 
-  .header_text h2 {
-    margin-top: 5vw;
-    font-size: 1rem;
-    top: 2vw;
-  }
 
   .project_body {
     height: 206vw;
   }
-} */
+}
 
 /* PC responsive*/
 
-/* @media screen and (max-width: 520px) {
+@media screen and (max-width: 520px) {
 
   #menu img {
     width: 10%;
@@ -768,123 +690,71 @@ footer{
   .home_header h1 {
     line-height: 12vw;
   }
-
   .sub_header h2 {
     font-size: 0.75rem;
     letter-spacing: 0.15rem;
   }
 
-  .works_header p {
+  .works_text h4{
+    font-size: 1rem;
+  }
+  .works_text p {
     line-height: 1rem;
-    margin: 0;
   }
-
-  .works_header span {
-    font-size: 0.1rem;
-  }
-
-  .button {
-    bottom: 1vw;
-    margin-bottom: 2vw;
-  }
-
   .button button {
     width: 12vw;
   }
-
   .works_detail video {
-    height: 82%;
+    height: auto;
+    padding-top: 10vw;
   }
-
+  .works_detail{
+    text-align: center;
+  }
   .works_detail img {
-    width: 70%;
-    left: 10%;
-    top: 4.5vw;
+    padding: 5vw 0 0 0;
   }
-
-  .works_header h4{
+  .works_text span {
     font-size: 0.75rem;
   }
 
-  #works {
-    height: 105vw;
+  .contact_header h4 {
+    font-size: 1rem;
+  }
+  #bar_button button {
+    width: 12vw;
+    height: 5vw;
+    padding: 0;
+  }
+  #bar_button button:before{
+    font-size: 0.5rem;
   }
 
   .about_text p {
     font-size: 0.75rem;
     text-indent: 1rem;
   }
-
-  #about {
-    height: 74vw;
-  }
-
   .about_img img {
-    top: 10vw;
+    margin-top: 0vw;
   }
 
-  .contact_infor h3 {
-    margin: 0.25vw;
-    text-align: center;
+  .footer_wrap {
+    grid-template-columns: 30% 40% 30%;
   }
-
-  .contact_infor {
-    height: 65vw;
+  .footer_body p{
+    margin: 0;
   }
-
-  #contact {
-    height: 85vw;
-  }
-
-  .contact_infor p {
-    text-indent: 0;
-    line-height: 1rem;
-  }
-
-  .contact_infor img {
-    bottom: 2vw;
-    margin-top: 0;
-  }
-
-  #bar_button button {
-    left: 18vw;
-  }
-
-  #bar_button form {
-    top: 4vw;
-  }
-
-  #bar_button button {
-    width: 11vw;
-    height: 6vw;
-  }
-
-  .contact_header h4 {
-    font-size: 1rem;
-  }
-
-  #button button {
-    width: 10vw;
-    height: 6vw;
-  }
-
   .footer_body input {
     height: 4vw;
+    width: 20vw;
+  }
+  #footer_button button {
+    padding: 0;
+  }
+  #footer_button {
+    padding-top: 0;
   }
 
-  #button{
-    margin-top: 2vw;
-  }
-
-  .header_text h1 {
-    font-size: 1.5rem;
-  }
-
-  .header_text a {
-    font-size: 1rem;
-    position: relative;
-    bottom: 4vw;
-  }
 
   .project_body {
     height: 340vw;
@@ -892,57 +762,34 @@ footer{
     bottom: 4vw;
   }
 
-  .body h3{
-    font-size: 0.75rem;
-  }
-
-  .body p{
-    font-size: 0.5rem;
-  }
 }
 
 
 @media (max-width: 414px){
 
   .home_header h1 {
-    line-height: 11vw;
+    padding: 4vw 6vw 0 8vw;
     font-size: 8vw;
-    left: 10%;
   }
   .sub_header h2 {
     font-size: 0.5rem;
     letter-spacing: 0.15rem;
-    bottom: 4vw;
   }
 
-  .home_body {
-    bottom: 6vw;
+  .button button {
+    width: 14vw;
   }
-
-  #project1_header {
-    position: relative;
+  .works_detail video{
+    padding: 2vw;
   }
-
   #project1_body {
     position: relative;
-    bottom: 2vw;
+    bottom: 44vw;
   }
-
-  .button {
-    bottom: 3vw;
-    padding-bottom: 2vw;
-  }
-
-  #project2_body {
+  #project1_header {
     position: relative;
-    bottom: 40vw;
+    top: 48vw;
   }
-
-  #project2_header{
-    position: relative;
-    top: 55vw;
-  }
-
   .works_detail img {
     width: 40%;
     height: 50%;
@@ -950,106 +797,60 @@ footer{
     top: 0;
     padding: 2vw 0;
   }
-
   .work {
     display: block;
   }
-
   #works {
-    height: 220vw;
+    height: 206vw;
   }
-
-  .works_header p {
+  .works_text p {
     padding: 0 4vw 5vw;
   }
-
-  .works_header h4{
+  .works_text h4{
     font-size: 1rem;
   }
-
   .works_detail {
     background-color:rgb(255, 255, 255);
     text-align: center;
   }
 
-  .about_img img {
-    top: 8vw;
-  }
-
   .about_text p {
     font-size: 0.5rem;
-    line-height: 3vw;
   }
-
-  #about {
-    height: 90vw;
-  }
-
-  #contact {
-  height: 145vw;
-  }
-
-  .contact_infor {
-    height: 65vw;
-  }
-
   .contact_header h4 {
     font-size: .5rem;
   }
-
   .contact_body {
     display: block;
   }
-
-  .contact_infor img {
-    left: 40%;
-    width: 20%;
+  .contact_icon {
+    padding-bottom: 6vw;
   }
-
-  #bar_button form {
-    top: 0;
-  }
-
-  .contact_form {
-    position: relative;
-    bottom: 6vw;
-    height: 55vw;
-  }
-
   #input_subject {
     width: 59vw;
   }
-
   #message {
     width: 59vw;
     height: 20vw;
+    left: 15%;
   }
-
-  #bar_button button {
-    width: 20vw;
+  .contact_detail {
     position: relative;
-    left: 25%;
-    top: 0;
+    bottom: 6vw;
+  }
+  .bar input {
+    height: 8vw;
   }
 
   .footer_wrap {
     display: block;
-    margin: 6vw;
+    padding: 4vw;
   }
-
-  .footer_header{
-    margin-top: 4vw;
-  }
-
   .footer_info {
-    position: relative;
-    top: 4vw;
+    padding: 0 0 2vw 0;
   }
-
   .footer_link {
     text-align: left;
-    position: relative;
-    top: 4vw;
   }
 
   .footer_body li {
@@ -1057,33 +858,23 @@ footer{
     position: static;
     text-align: left;
   }
-
   .footer_input {
-    top: 4vw;
     text-align: left;
     margin-top: 0;
-    position: relative;
   }
-
   .footer_body input {
-    height: 6vw;
+    height: 6.8vw;
+    width: 74vw;
+  }
+  #footer_button button {
+    width: 12vw;
+    height: 6.9vw;
+  }
+  .footer_header h3{
+    margin-bottom: 0;
   }
 
-  #button button {
-    width: 16vw;
-    height: 6vw;
-  }
 
-  .header_text h1 {
-    font-size: 1rem;
-  }
-
-  .header_text a {
-    font-size: 0.5rem;
-    color: rgb(5, 84, 150);
-    position: relative;
-    bottom: 6vw;
-  }
   .project_body h2{
     font-size: 1rem;
   }
@@ -1097,72 +888,35 @@ footer{
     bottom: 10vw;
   }
 
-  footer {
-    height:70vw;
-  }
 
-  .footer_header h3{
-    margin-bottom: 0;
-  }
+
 }
 
 @media (max-width: 375px){
 
-  .button button {
-    width: 18vw;
+  #project1_body {
+    bottom: 56vw;
   }
-
   #works {
-    height: 230vw;
+    height: 225vw;
   }
-  .works_header {
+  .works_text {
     height: 55vw;
-  }
-
-  .works_header {
-    background-color: rgb(5, 84, 150);
-    height: 55vw;
-  }
-
-  .works_detail img {
-    top: 2vw;
   }
 
   .about_text p {
     line-height: 3.5vw;
   }
 
-  #about {
-    height: 100vw;
-  }
-
   .contact_icon {
     display: none;
   }
-
-  .contact_header h4 {
-    padding-top: 6vw;
-  }
-
-  #contact {
-    height: 160vw;
-  }
-
-  .contact_form {
-    height: 65vw
-  }
-
-  footer {
-    height: 110vw;
+  .contact_detail {
+    bottom: 4vw;
   }
 
   .footer_body li {
     display: block;
-  }
-
-  .project_body {
-    height: 540vw;
-
   }
 }
 
@@ -1170,54 +924,33 @@ footer{
   .home_header h1 {
     font-size: 8vw;
     line-height: 10vw;
-    left: 10%;
-  }
-  #home {
-    height: 40vw;
   }
 
-  .works_header h4 {
-    margin-top: 1vw;
+  .button {
+    padding: 2vw;
   }
-
-  .works_header {
-    height: 60vw;
+  .button a{
+    font-size: 0.5rem;
+    line-height: 0;
   }
-
-  #project2_header {
-    top: 63vw;
+  .button button {
+    width: 16vw;
   }
-  #works {
-    height: 240vw;
+  .works_text p {
+    line-height: 0.75rem;
   }
-  #about {
-    height: 110vw;
+  .about_text{
+    padding: 1vw 2vw 4vw 2vw;
   }
-  .contact_infor {
-    height: 70vw;
-  }
-
-  #contact {
-    height: 175vw;
-  }
-  .bar input {
-    height: 8vw;
-  }
-
-  .contact_form {
-    height: 75vw;
-  }
-
-  .footer_body{
-    position: relative;
-    bottom: 4vw;
-  }
-  footer {
-    height: 130vw;
+  .contact_detail {
+    bottom: 5vw;
   }
 
   .footer_header h3 {
     margin-bottom: 4vw;
+  }
+  .footer_body input {
+    height: 6.8vw;
   }
 
   .sidenav a {
