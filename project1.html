@@ -15,12 +15,14 @@
 
     <section id="project_wrap">
       <div class="project_header">
+        <div class="header_text">
+          <u><h2><a href="http://www.sfu.ca/~yanhongw/FInal%20project/home.html">Three Gorges Dam</a></h2></u>
+          <h1>Project: <br>Web Design</h1>
+          <p>This website related to <span><u>THREE GORGES DAM</u></span></a>. It asked me to explain how the man-made construction impact to local residents and natures with a clear manner.
+          </p>
+        </div>
         <div class="header_image">
           <img src="img/three.png" alt="">
-        </div>
-        <div class="header_text">
-          <h1>Project: Web Design</h1>
-          <u><h2><a href="http://www.sfu.ca/~yanhongw/FInal%20project/home.html">Three Gorges Dam</a></h2></u>
         </div>
       </div>
 
@@ -29,16 +31,14 @@
           <h2>PRoject Introduction</h2>
         </div>
         <section id="project_detail">
-          <div class="project_text">
-            <div class="body">
-              <h3>Project Description</h3>
-              <p>This is the final project of IAT235 course. This project created a website that could show a communicating complexity with a clear manner. The main issue was trying to clear up for stakeholders involves some kind of human-technical-environmental 'thing', like system, process, phenomenon, institution, etc.. In this project, we focused on how the Three Gorges Dam influenced building Local residences’ life and living condition.</p>
-            </div>
-          </div>
           <div class="project_main">
             <video muted loop controls>
               <source src="img/project1.mp4" type="video/mp4">
             </video>
+          </div>
+          <div class="project_text" id="section_1">
+              <h3>Project Description</h3>
+              <p>This is the final project of IAT235 course. This project created a website that could show a communicating complexity with a clear manner. The main issue was trying to clear up for stakeholders involves some kind of human-technical-environmental 'thing', like system, process, phenomenon, institution, etc.. In this project, we focused on how the Three Gorges Dam influenced building Local residences’ life and living condition.</p>
           </div>
         </section>
         <div class="title">
@@ -46,54 +46,38 @@
         </div>
 
         <section id="project_detail">
-          <div class="project_text">
-            <div class="body">
+          <div class="project_text" id="section_2">
               <h3>What Did I Do?</h3>
               <p>This is a group project. I was responsible for in the about, info, and the javascrip part of data.</p>
-            </div>
           </div>
           <div class="project_main">
             <video muted autoplay loop controls>
               <source src="img/my.mp4" type="video/mp4">
             </video>
           </div>
-        </section>
-
-        <section id="project_detail">
-          <div class="project_text">
-            <div class="body">
+          <div class="project_text" id="section_2">
               <h3>Challenge & Solution</h3>
               <p>The <strong>challenge</strong> of this project was to find an relative accurate information about the topic and “human, technology and environment”. Additionally, finding stakeholder is our biggest resistance and how to display a suitable information and images to our stakeholders.</p>
-
-              <br><br><br>
+              <br>
               <p>To <strong>solve</strong> the challenges we used the charts and data to explain the complex the environment changing. And also, narrowing the range and find a specific audience. </p>
-            </div>
+              <div class="project-imgs">
+                <img src="img/chart01.jpg" alt="this is the page for project1" class="project-img">
+                <img src="img/chart02.jpg" alt="this is the page for project1" class="project-img">
+                <img src="img/chart03.jpg" alt="this is the page for project1" class="project-img">
+              </div>
           </div>
           <div class="project_main">
             <img src="img/stakeholder.jpg" alt="">
-            <br><br><br>
-            <div class="project-imgs">
-              <img src="img/chart01.jpg" alt="this is the page for project1" class="project-img">
-              <img src="img/chart02.jpg" alt="this is the page for project1" class="project-img">
-              <img src="img/chart03.jpg" alt="this is the page for project1" class="project-img">
           </div>
-          </div>
-        </section>
-
-        <section id="project_detail">
-          <div class="project_text">
-            <div class="body">
+          <div class="project_text" id="section_2">
               <h3>Wireframe</h3>
               <p>For present the clearly idea, I draw a detailed wireframes for website design.The wireframe showed the clearly interactions and workflow.</p>
-            </div>
           </div>
           <div class="project_main">
             <img src="img/wireframe.jpg" alt="" class="project-img">
           </div>
-        </section>
 
-        <section id="project_detail">
-          <div class="project_text">
+          <div class="project_text" id="section_2">
             <div class="body">
               <h3>Reflection</h3>
               <p>This is the final project of IAT235 course. This project created a website that could show a communicating complexity with a clear manner. The main issue was trying to clear up for stakeholders involves some kind of human-technical-environmental 'thing', like system, process, phenomenon, institution, etc.. In this project, we focused on how the Three Gorges Dam influenced building Local residences’ life and living condition.</p>
@@ -105,28 +89,29 @@
             </video>
           </div>
         </section>
-
       </div>
     </section>
 
     <!-- navigation -->
     <section id="navigation">
-      <input type="checkbox" class="openSidebarMenu" id="openSidebarMenu">
-      <label for="openSidebarMenu" class="sidebarIconToggle">
-        <div id="sidebar" class="sidebar_01">
-          <span class="iconfont" id="menu">&#xec3a;</span>
+      <nav>
+        <div id="mySidenav" class="sidenav">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+          <div class="nav_items">
+            <a href="#home">HOME</a>
+            <a href="#works">WORKS</a>
+            <a href="#about">ABOUT</a>
+            <a href="#contact">CONTACT</a>
+          </div>
         </div>
-      </label>
-      <div id="sidebarMenu">
-        <ul class="sidebarMenuInner" >
-          <li><a href="home.html">HOME</a></li>
-        </ul>
-      </div>
+        <span style="font-size:30px;cursor:pointer" onclick="openNav()" id="menu"><img src="img/menu01.png" alt=""></span>
+      </nav>
     </section>
 
 
     <!-- footer -->
-    <footer id="project_footer">
+    <!-- footer -->
+    <footer>
       <div class="footer_wrap">
         <div class="footer_info">
           <div class="footer_header">
@@ -146,11 +131,11 @@
           </div>
           <div class="footer_body">
             <ul>
-              <li><a href="home.html">HOME</a></li>
+              <li><a href="#home">HOME</a></li>
               <li><a href="#about">ABOUT</a></li>
               <li><a href="#works">WORKS</a></li>
-              <li><a href="#contact">CONTACT</a></li>
               <li><a href="index.html">STYLE GUIDE</a></li>
+              <li> <a href="#"> CITATION</a> </li>
             </ul>
           </div>
         </div>
@@ -162,13 +147,15 @@
           <div class="footer_body">
             <div class="footer_detail">
               <input type="text" name="email" value="EMAIL...">
-              <div id="button">
-                <button type="submit">
+              <div class="button" id="footer_button">
+                <button><a href="#"></a></button>
               </div>
             </div>
           </div>
         </div>
       </div>
     </footer>
+    <script type="text/javascript" src="js/main.js">
+    </script>
   </body>
 </html>

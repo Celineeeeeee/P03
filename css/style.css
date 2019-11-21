@@ -387,16 +387,16 @@ footer{
   display: inline-flex;
 }
 
-.footer_body p{
+.footer_body p {
   color:white;
   font-size: 1rem;
 }
 
-.footer_body a{
+.footer_body a {
   color:rgb(241, 139, 137);
 }
 
-#footer_button button:before{
+#footer_button button:before {
   content:"SEND";
 }
 
@@ -405,124 +405,131 @@ footer{
   background-color: rgb(241,139,137);
 }
 
-#footer_button{
+#footer_button {
   padding: 0;
 }
 
-
-.footer_body input{
+.footer_body input {
   height: 2.1vw;
 }
 
 
 /* the style for project */
 
-.header_image{
+.project_header {
+  display: grid;
+  grid-template-columns: 50% 50%;
   text-align: center;
-  position: relative;
-  top: 5vw;
-  opacity: 0.8;
+  margin: 6vw 4vw;
+  background-color: rgb(5, 84, 150);
 }
-
-.header_image img{
-  width: 70%;
-  height: 100%;
+.header_text {
+  text-align: right;
+  padding: 8vw 0;
 }
-
-.project_header{
-  position: relative;
-  top: 2vw;
-
+.header_image {
+  text-align: left;
 }
-
-#project_wrap{
-  background-color: rgb(255, 255, 255, 0.5);
+.header_image img {
+  width: 100%;
+  height: auto;
+  padding: 4vw;
 }
-
-.header_image:hover{
-  opacity:1;
+.header_image img:hover {
   transform: scale(1);
 }
 
-.header_text{
-  position: relative;
-  bottom: 30vw;
-  text-align: center;
-  color: rgb(0,0,0);
+.header_text h1 {
+  font-size: 5rem;
+  line-height: 6rem;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-top: 1vw;
 }
-
-.header_text h1{
-  font-size: 3rem;
-  position: relative;
-  top: 10vw;
-}
-
-.header_text a{
+.header_text a {
   font-size: 2rem;
   color: rgb(255,255,255);
 }
-
-
+.header_text p {
+  font-size: 1rem;
+  line-height: 1rem;
+  padding: 0 0 0 4vw;
+  color: rgb(255,255,255);
+}
+.header_text span {
+  font-size: 1rem;
+  line-height: 2rem;
+}
 
 .project_body{
+  margin: 6vw 4vw;
   display: block;
-  text-align: center;
-  margin: 0 10vw 10vw 10vw;
-  position: relative;
-  background-color: rgb(30,73,76);
-  height: 150vw;
 }
 
 .project_body h2,p,h3{
-  color: white;
+  color: black;
 }
 
-#project_detail {
-  display: inline-grid;
-  grid-template-columns: 50% 50%;
-  padding: 0 4vw;
-}
-
-.title{
-  padding-top: 1vw;
-}
 .title{
   text-align: center;
 }
-.project_body p{
-  text-align: left;
+.title h2 {
+  padding-top: 4vw;
+  padding-bottom: 0;
+  font-size: 2rem;
+}
+
+#project_detail {
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+.project_text{
+  padding: 2vw;
+}
+.project_main{
+  padding: 2vw;
 }
 
 .project_main video {
   width: 100%;
   height: 100%;
+  padding-left: 6vw;
+}
+.project_text p {
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+.project_text h3 {
+  font-size: 1.5rem;
+  padding-top: 2vw;
+}
+#section_1 p{
+  padding: 0 6vw;
 }
 
-.project_text{
-  padding: 2vw;
-  background-color: rgb(241, 139, 137);
+#section_2 {
+  text-align: right;
 }
-
-.project_main{
-  padding: 2vw;
-  background-color: rgb(255,255,255);
+#section_2 p{
+  padding: 0 6vw;
 }
-
-.video_item video{
-  width: 100%;
-  height: 100%;
-}
-
-.body p{
-  padding: 0 2vw;
+.project_main video {
+  text-align: left;
+  padding-left: 0;
 }
 
 .project-imgs{
   display: inline-flex;
 }
+.project_main img{
+  width: 100%;
+  height: auto;
+}
 .project-imgs img{
-  width: 35%;
-  height: 20%;
+  width: 30%;
+  height: auto;
+  padding: 0 0.5vw;
+  margin-top: 0;
 }
 
 
@@ -547,6 +554,12 @@ footer{
   }
   .footer_body input{
     height: 2.7vw;
+  }
+
+  /* page: project1 style */
+  .header_text h1 {
+    font-size: 4rem;
+    line-height: 4rem;
   }
 }
 
@@ -575,16 +588,36 @@ footer{
     height: 2.9vw;
   }
 
-
-  .project_body {
-    height: 160vw;
+  /* page: project1 style */
+  .header_text h2 {
+    letter-spacing: 0;
   }
+  .header_text p {
+    line-height: 1.25rem;
+  }
+  .header_text span {
+    line-height: 1.25rem;
+  }
+
 }
 
 @media screen and (max-width: 978px) {
 
   .works_detail video{
     padding-top: 4vw;
+  }
+
+  /* page: project1 style */
+  .header_text h1 {
+    font-size: 3rem;
+    line-height: 3rem;
+  }
+
+  .project_text p {
+    line-height: 1.5rem;
+  }
+  .project_text h3 {
+    letter-spacing: 0.25rem;
   }
 }
 
@@ -667,10 +700,26 @@ footer{
     height: 3.5vw;
   }
 
+  /* page: project1 style */
+  .header_text h1 {
+    font-size: 2.5rem;
+    line-height: 2.5rem;
+  }
+  .header_text a {
+    font-size: 1.25rem;
+  }
+  .header_text p{
+    font-size: 0.75rem;
+    line-height: 0.75rem;
+  }
+  .header_text span{
+    font-size: 0.75rem;
+    line-height: 0.75rem;
+  }
 
-
-  .project_body {
-    height: 206vw;
+  .project_text p {
+    font-size: 0.75rem;
+    line-height: 1rem;
   }
 }
 
@@ -755,11 +804,30 @@ footer{
     padding-top: 0;
   }
 
+  /* page: project1 style */
+  .header_text h1 {
+    font-size: 2rem;
+    line-height: 2rem;
+  }
+  .header_text a {
+    font-size: 1rem;
+  }
+  .header_text p{
+    font-size: 0.5rem;
+    line-height: 0.75rem;
+  }
 
   .project_body {
-    height: 340vw;
-    position: relative;
-    bottom: 4vw;
+    display: block;
+  }
+
+
+  .project_text h3 {
+    font-size: 1.5rem;
+  }
+  .project_text p {
+    font-size: 0.75rem;
+    line-height: 1rem;
   }
 
 }
@@ -874,21 +942,46 @@ footer{
     margin-bottom: 0;
   }
 
+  /* page: project1 style */
+  .header_text h1 {
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+  }
 
-  .project_body h2{
+  .header_text a {
     font-size: 1rem;
   }
+  .header_text p{
+    font-size: 0.5rem;
+    line-height: 0.75rem;
+  }
+  .header_text span{
+    font-size: 0.5rem;
+    line-height: 0.75rem;
+  }
+
   #project_detail {
     display: block;
   }
 
-  .project_body {
-    height: 520vw;
-    position: relative;
-    bottom: 10vw;
+  .title h2 {
+    letter-spacing: 0rem;
+    font-size: 1.5rem;
   }
 
+  .project_text h3 {
+    font-size: 1.5rem;
+    letter-spacing: 0.2rem;
+  }
+  .project_text p {
+    font-size: 0.75rem;
+    line-height: 1rem;
+    text-align: left;
+  }
 
+  #section_2 h3{
+    text-align: left;
+  }
 
 }
 
@@ -917,6 +1010,29 @@ footer{
 
   .footer_body li {
     display: block;
+  }
+
+  .project_header {
+    display: block;
+  }
+
+  .header_text a {
+    letter-spacing: 0rem;
+    font-size: 0.5rem;
+  }
+  .header_text {
+    text-align: right;
+    padding: 2vw 4vw;
+  }
+  .header_image img{
+    margin-top: 0;
+  }
+  .title h2 {
+    display: none;
+  }
+
+  .project_text {
+    padding: 0;
   }
 }
 
@@ -956,4 +1072,4 @@ footer{
   .sidenav a {
     padding: 8vw;
   }
-} */
+}
