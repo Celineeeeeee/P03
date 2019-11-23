@@ -21,6 +21,7 @@ body{
 
 #home{
   background-color: rgb(5, 84, 150);
+  background-image: url("../img/back-1.png");
   margin: 8vw 4vw;
 }
 
@@ -410,7 +411,7 @@ footer{
 }
 
 .footer_body input {
-  height: 2.1vw;
+  /* height: 2.1vw; */
 }
 
 
