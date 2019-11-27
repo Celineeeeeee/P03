@@ -25,14 +25,12 @@ body{
 }
 
 #home{
-
   margin: 8vw 0;
 }
 
 .home_container{
   display:grid;
   grid-template-columns: 60% 40%;
-  margin:4vw;
 }
 
 .home_header h1{
