@@ -1,0 +1,46 @@
+ .content {
+	display: grid;
+}
+
+/* Common styles for the words */
+.word {
+	display: flex;
+  float: left;
+	letter-spacing: 1vw;
+}
+
+.word-swing {
+	text-transform: uppercase;
+	line-height: 0.725;
+	perspective: 800px;
+	--color-text: #828284;
+	--color-background: #1f1f21;
+	--color-link: #828284;
+	--color-link-hover: #fff;
+}
+
+.word-swing svg {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 450px;
+	height: 510px;
+	margin: -255px 0 0 -225px;
+	pointer-events: none;
+}
+
+.word-swing svg circle {
+	fill: currentColor;
+	opacity: 0;
+	transform-origin: 50% 50%;
+}
+
+.word-swing span {
+	display: block;
+	position: relative;
+	color:rgb(241, 139, 137);
+}
+
+.word-swing span span:first-of-type {
+	position: absolute;
+}
