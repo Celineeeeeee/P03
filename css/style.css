@@ -3,6 +3,11 @@ body{
   margin: 0;
 }
 
+.main_body {
+  margin: 0 4vw;
+  background-color: rgb(255, 255, 255,0.8);
+}
+
 /* style for home  */
 
 .background img{
@@ -20,12 +25,13 @@ body{
 }
 
 #home{
-  background-color: rgb(5, 84, 150);
-  background-image: url("../img/back-1.png");
-  margin: 8vw 4vw;
+
+  margin: 8vw 0;
 }
 
 .home_container{
+  display:grid;
+  grid-template-columns: 60% 40%;
   margin:4vw;
 }
 
@@ -33,29 +39,35 @@ body{
   font-size: 10vw;
   line-height: 14vw;
   padding: 4vw 2vw 1vw;
-  color: rgb(245, 246, 230);
-  letter-spacing: 1vw;
   margin: 0;
+  text-align: left;
+}
+
+.word_items{
+  font-size: 4vw;
+  color: rgb(5, 84, 150);
+
 }
 
 .sub_header{
-  text-align: center;
-  padding-bottom: 4vw;
+  padding: 1vw 3vw;
 }
 
 .sub_header h2{
   color:rgb(241, 139, 137);
-  color: rgb(241, 139, 137);
   margin-top: 0;
 }
 
-span{
-  color:rgb(241, 139, 137);
-  left: 2.5vw;
-  top: 3vw;
-  width: 2vw;
-  height: 2vw;
+.home_image img{
+  width: 100%;
+  height: auto;
+  padding: 4vw;
 }
+
+.home_image img:hover{
+  transform: scale(1);
+}
+
 
 /* side navigation */
 
@@ -108,9 +120,36 @@ span{
   margin-top: 1vw;
 }
 
-#navigation{
+.navigation_icon {
+  float: right;
+}
+
+
+/* #navigation{
   position: fixed;
   top: 1vw;
+} */
+
+#navigation {
+  display: none;
+}
+
+#navigation_Laptop {
+  position: fixed;
+  top: 1vw;
+  display: grid;
+  grid-template-columns: 60% 40%;
+  float: left;
+  width:100%;
+}
+
+#navigation_Laptop a{
+  font-size: 1rem;
+}
+
+.navigation_icon {
+  text-align: right;
+  padding-right: 14vw;
 }
 
 /* the style for work section */
@@ -176,10 +215,6 @@ span{
   width: 100%;
   height: auto;
   padding: 1vw;
-}
-
-.works_text span{
-  font-size: 1rem;
 }
 
 .button a:hover{
