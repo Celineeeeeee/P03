@@ -211,6 +211,10 @@ body{
   #project_detail{
     display: block;
   }
+
+  #section_2 p{
+    text-align: left;
+  }
   #project2_header_main h1{
     font-size: 1.75rem;
     line-height: 1.75rem;
@@ -237,4 +241,19 @@ body{
     display: none;
   }
 
+}
+
+@media (max-width: 414px){
+  #project2_header_main h1{
+    font-size:1rem;
+    line-height:1.25rem;
+  }
+  .project_text p {
+    font-size: 0.75rem;
+    line-height: 1rem;
+  }
+  .header_text h1{
+    font-size:1rem;
+    line-height:1.25rem;
+  }
 }
