@@ -131,10 +131,6 @@ input, button {
 #bar_button button:before{
   content:"SEND";
 }
-
-#bar_button button{
-  width: 8vw;
-}
 #bar_button{
   padding-top: 2vw;
 }
