@@ -20,6 +20,10 @@ code {
     width: 80%;
 }
 
+footer{
+  background-color: rgb(5, 84, 150);
+}
+
 nav,ul,li {
     padding: 0;
     margin: 0;
